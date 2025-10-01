@@ -1,40 +1,208 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K7QKDXRR');</script>
-<!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <title>テストBtoBサイト - お問い合わせ</title>
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - GTM練習サイト</title>
+</head>
 <body>
- <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7QKDXRR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- ヘッダー -->
+    <header>
+        <nav>
+            <h1>GTM練習サイト</h1>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="pricing.html">料金プラン</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <h1>テストBtoBサイト</h1>
-    <nav>
-      <a href="index.html">トップ</a> |
-      <a href="about.html">会社情報</a> |
-      <a href="services.html">サービス</a> |
-      <a href="contact.html">お問い合わせ</a>
-    </nav>
-  </header>
+    <!-- お問い合わせフォーム -->
+    <section id="contact-form-section">
+        <h1>お問い合わせ</h1>
+        <p>ご質問やご相談がございましたら、お気軽にお問い合わせください</p>
 
-  <main>
-    <h2>お問い合わせ</h2>
-    <p>テスト用の問い合わせフォームはありませんが、ボタンでクリック計測が可能です。</p>
-    <button id="contactBtn">お問い合わせボタン</button>
-  </main>
+        <form id="contact-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">お名前 <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
 
-  <footer>
-    <p>&copy; 2025 テストBtoBサイト</p>
-  </footer>
+            <div class="form-group">
+                <label for="company">会社名</label>
+                <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+                <label for="email">メールアドレス <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">電話番号</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="inquiry-type">お問い合わせ種別 <span class="required">*</span></label>
+                <select id="inquiry-type" name="inquiry-type" required>
+                    <option value="">選択してください</option>
+                    <option value="product">製品について</option>
+                    <option value="pricing">料金について</option>
+                    <option value="demo">デモ依頼</option>
+                    <option value="support">サポート</option>
+                    <option value="other">その他</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    メールマガジンを受け取る
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="privacy" name="privacy" value="accepted" required>
+                    <a href="#privacy-policy" id="privacy-link">プライバシーポリシー</a>に同意する <span class="required">*</span>
+                </label>
+            </div>
+
+            <button type="submit" id="submit-contact-form" class="submit-btn">送信する</button>
+        </form>
+    </section>
+
+    <!-- その他の連絡方法 -->
+    <section id="contact-info">
+        <h2>その他の連絡方法</h2>
+        <div class="contact-methods">
+            <div class="contact-method">
+                <h3>電話でのお問い合わせ</h3>
+                <p>03-1234-5678</p>
+                <p>平日 9:00-18:00</p>
+                <button id="call-button" class="contact-action">電話をかける</button>
+            </div>
+            <div class="contact-method">
+                <h3>チャットサポート</h3>
+                <p>リアルタイムでご相談いただけます</p>
+                <button id="chat-button" class="contact-action">チャットを開始</button>
+            </div>
+            <div class="contact-method">
+                <h3>オフィス住所</h3>
+                <p>〒100-0001</p>
+                <p>東京都千代田区千代田1-1</p>
+                <button id="map-button" class="contact-action">地図を見る</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section id="faq-section">
+        <h2>よくある質問</h2>
+        <p>お問い合わせの前に、よくある質問もご確認ください</p>
+        <button id="faq-button">FAQページへ</button>
+    </section>
+
+    <!-- 資料ダウンロード -->
+    <section id="contact-download">
+        <h2>製品資料のダウンロード</h2>
+        <p>より詳しい情報が必要な方は、製品資料をダウンロードしてください</p>
+        <button id="download-brochure" class="download-btn" data-file="brochure">製品パンフレットをダウンロード</button>
+    </section>
+
+    <!-- SNSリンク -->
+    <section id="contact-social">
+        <h2>SNSでも情報発信中</h2>
+        <div class="social-links">
+            <a href="https://twitter.com/example" class="social-link" data-social="twitter" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://facebook.com/example" class="social-link" data-social="facebook" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://youtube.com/example" class="social-link" data-social="youtube" target="_blank" rel="noopener">YouTube</a>
+        </div>
+    </section>
+
+    <!-- サンクスモーダル -->
+    <div id="thanks-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:30px; border-radius:8px; max-width:500px; text-align:center;">
+            <h2>送信完了</h2>
+            <p>お問い合わせありがとうございます。<br>担当者より2営業日以内にご連絡いたします。</p>
+            <button id="close-thanks-modal" class="modal-action">閉じる</button>
+            <br><br>
+            <a href="index.html">トップページに戻る</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 GTM練習サイト. All rights reserved.</p>
+        <a href="index.html">ホームへ戻る</a> | <a href="pricing.html">料金プラン</a>
+    </footer>
+
+    <!-- フォーム送信スクリプト -->
+    <script>
+        // フォーム送信処理
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // フォームデータを取得（GTMでの計測用）
+            var formData = {
+                name: document.getElementById('name').value,
+                company: document.getElementById('company').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                inquiryType: document.getElementById('inquiry-type').value,
+                message: document.getElementById('message').value,
+                newsletter: document.getElementById('newsletter').checked,
+                privacy: document.getElementById('privacy').checked
+            };
+
+            console.log('Form submitted:', formData);
+            
+            // サンクスモーダルを表示
+            document.getElementById('thanks-modal').style.display = 'block';
+        });
+
+        // サンクスモーダルを閉じる
+        document.getElementById('close-thanks-modal').addEventListener('click', function() {
+            document.getElementById('thanks-modal').style.display = 'none';
+            document.getElementById('contact-form').reset();
+        });
+
+        // 電話ボタン
+        document.getElementById('call-button').addEventListener('click', function() {
+            alert('電話機能を起動します（デモ）');
+        });
+
+        // チャットボタン
+        document.getElementById('chat-button').addEventListener('click', function() {
+            alert('チャットウィンドウを開きます（デモ）');
+        });
+
+        // 地図ボタン
+        document.getElementById('map-button').addEventListener('click', function() {
+            alert('地図を表示します（デモ）');
+        });
+
+        // FAQボタン
+        document.getElementById('faq-button').addEventListener('click', function() {
+            alert('FAQページに移動します（デモ）');
+        });
+
+        // 資料ダウンロード
+        document.getElementById('download-brochure').addEventListener('click', function() {
+            alert('製品パンフレットをダウンロードします（デモ）');
+        });
+
+        // プライバシーポリシーリンク
+        document.getElementById('privacy-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('プライバシーポリシーページを表示します（デモ）');
+        });
+    </script>
 </body>
 </html>
