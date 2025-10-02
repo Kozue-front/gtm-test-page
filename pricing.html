@@ -1,165 +1,153 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>料金プラン - GTM練習サイト</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K7QKDXRR');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テストBtoBサイト - 料金プラン</title>
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header>
-        <nav>
-            <h1>GTM練習サイト</h1>
-            <ul>
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="pricing.html">料金プラン</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7QKDXRR"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <header>
+    <h1>テストBtoBサイト</h1>
+    <nav>
+      <a href="index.html">トップ</a> |
+      <a href="about.html">会社情報</a> |
+      <a href="services.html">サービス</a> |
+      <a href="pricing.html">料金プラン</a> |
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </header>
 
+  <main>
     <!-- 料金プランセクション -->
     <section id="pricing">
-        <h1>料金プラン</h1>
-        <p>あなたのビジネスに最適なプランをお選びください</p>
+      <h1>料金プラン</h1>
+      <p>あなたのビジネスに最適なプランをお選びください</p>
 
-        <div class="pricing-plans">
-            <!-- ベーシックプラン -->
-            <div class="plan-card" data-plan="basic">
-                <h2>ベーシック</h2>
-                <p class="price">¥9,800<span>/月</span></p>
-                <ul>
-                    <li>ユーザー数: 5名まで</li>
-                    <li>ストレージ: 10GB</li>
-                    <li>基本サポート</li>
-                    <li>メール通知</li>
-                </ul>
-                <button class="plan-select" data-plan="basic" data-price="9800">ベーシックを選択</button>
-            </div>
-
-            <!-- プロフェッショナルプラン -->
-            <div class="plan-card featured" data-plan="professional">
-                <div class="popular-badge">人気</div>
-                <h2>プロフェッショナル</h2>
-                <p class="price">¥24,800<span>/月</span></p>
-                <ul>
-                    <li>ユーザー数: 20名まで</li>
-                    <li>ストレージ: 100GB</li>
-                    <li>優先サポート</li>
-                    <li>高度な分析機能</li>
-                    <li>API連携</li>
-                </ul>
-                <button class="plan-select" data-plan="professional" data-price="24800">プロフェッショナルを選択</button>
-            </div>
-
-            <!-- エンタープライズプラン -->
-            <div class="plan-card" data-plan="enterprise">
-                <h2>エンタープライズ</h2>
-                <p class="price">¥98,000<span>/月</span></p>
-                <ul>
-                    <li>ユーザー数: 無制限</li>
-                    <li>ストレージ: 1TB</li>
-                    <li>24時間専任サポート</li>
-                    <li>カスタマイズ可能</li>
-                    <li>SLA保証</li>
-                    <li>専任担当者</li>
-                </ul>
-                <button class="plan-select" data-plan="enterprise" data-price="98000">エンタープライズを選択</button>
-            </div>
+      <div class="pricing-plans">
+        <!-- ベーシックプラン -->
+        <div class="plan-card" data-plan="basic">
+          <h2>ベーシック</h2>
+          <p class="price">¥9,800<span>/月</span></p>
+          <ul>
+            <li>ユーザー数: 5名まで</li>
+            <li>ストレージ: 10GB</li>
+            <li>基本サポート</li>
+            <li>メール通知</li>
+          </ul>
+          <button class="plan-select" data-plan="basic" data-price="9800">ベーシックを選択</button>
         </div>
+
+        <!-- プロフェッショナルプラン -->
+        <div class="plan-card featured" data-plan="professional">
+          <div class="popular-badge">人気</div>
+          <h2>プロフェッショナル</h2>
+          <p class="price">¥24,800<span>/月</span></p>
+          <ul>
+            <li>ユーザー数: 20名まで</li>
+            <li>ストレージ: 100GB</li>
+            <li>優先サポート</li>
+            <li>高度な分析機能</li>
+            <li>API連携</li>
+          </ul>
+          <button class="plan-select" data-plan="professional" data-price="24800">プロフェッショナルを選択</button>
+        </div>
+
+        <!-- エンタープライズプラン -->
+        <div class="plan-card" data-plan="enterprise">
+          <h2>エンタープライズ</h2>
+          <p class="price">¥98,000<span>/月</span></p>
+          <ul>
+            <li>ユーザー数: 無制限</li>
+            <li>ストレージ: 1TB</li>
+            <li>24時間専任サポート</li>
+            <li>カスタマイズ可能</li>
+            <li>SLA保証</li>
+            <li>専任担当者</li>
+          </ul>
+          <button class="plan-select" data-plan="enterprise" data-price="98000">エンタープライズを選択</button>
+        </div>
+      </div>
     </section>
 
     <!-- 比較表 -->
     <section id="comparison">
-        <h2>プラン比較表</h2>
-        <button id="show-comparison">詳細比較を見る</button>
+      <h2>プラン比較表</h2>
+      <button id="show-comparison">詳細比較を見る</button>
     </section>
 
     <!-- 追加オプション -->
     <section id="add-ons">
-        <h2>追加オプション</h2>
-        <div class="addon-list">
-            <div class="addon-item">
-                <h3>追加ストレージ (50GB)</h3>
-                <p>¥3,000/月</p>
-                <button class="addon-select" data-addon="storage" data-price="3000">追加する</button>
-            </div>
-            <div class="addon-item">
-                <h3>追加ユーザー (10名)</h3>
-                <p>¥5,000/月</p>
-                <button class="addon-select" data-addon="users" data-price="5000">追加する</button>
-            </div>
-            <div class="addon-item">
-                <h3>プレミアムサポート</h3>
-                <p>¥8,000/月</p>
-                <button class="addon-select" data-addon="support" data-price="8000">追加する</button>
-            </div>
+      <h2>追加オプション</h2>
+      <div class="addon-list">
+        <div class="addon-item">
+          <h3>追加ストレージ (50GB)</h3>
+          <p>¥3,000/月</p>
+          <button class="addon-select" data-addon="storage" data-price="3000">追加する</button>
         </div>
+        <div class="addon-item">
+          <h3>追加ユーザー (10名)</h3>
+          <p>¥5,000/月</p>
+          <button class="addon-select" data-addon="users" data-price="5000">追加する</button>
+        </div>
+        <div class="addon-item">
+          <h3>プレミアムサポート</h3>
+          <p>¥8,000/月</p>
+          <button class="addon-select" data-addon="support" data-price="8000">追加する</button>
+        </div>
+      </div>
     </section>
 
     <!-- CTA -->
     <section id="pricing-cta">
-        <h2>まずは無料トライアルから</h2>
-        <p>14日間、すべての機能を無料でお試しいただけます</p>
-        <button id="free-trial-btn" class="cta-primary">無料トライアルを始める</button>
+      <h2>まずは無料トライアルから</h2>
+      <p>14日間、すべての機能を無料でお試しいただけます</p>
+      <button id="free-trial-btn" class="cta-primary">無料トライアルを始める</button>
     </section>
+  </main>
 
-    <!-- モーダルウィンドウ（プラン選択確認） -->
-    <div id="plan-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
-        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:30px; border-radius:8px; max-width:500px;">
-            <h2>プランを選択しました</h2>
-            <p id="selected-plan-info"></p>
-            <button id="confirm-plan" class="modal-action">申し込み手続きへ</button>
-            <button id="close-plan-modal">キャンセル</button>
-        </div>
+  <!-- モーダルウィンドウ（プラン選択確認） -->
+  <div id="plan-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:30px; border-radius:8px; max-width:500px;">
+      <h2>プランを選択しました</h2>
+      <p id="selected-plan-info"></p>
+      <button id="confirm-plan" class="modal-action">申し込み手続きへ</button>
+      <button id="close-plan-modal">キャンセル</button>
     </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 GTM練習サイト. All rights reserved.</p>
-        <a href="contact.html">お問い合わせ</a> | <a href="index.html">ホームへ戻る</a>
-    </footer>
+  <footer>
+    <p>&copy; 2025 テストBtoBサイト</p>
+  </footer>
 
-    <!-- プラン選択スクリプト -->
-    <script>
-        // プラン選択ボタン
-        document.querySelectorAll('.plan-select').forEach(function(button) {
-            button.addEventListener('click', function() {
-                var plan = this.getAttribute('data-plan');
-                var price = this.getAttribute('data-price');
-                document.getElementById('selected-plan-info').textContent = 
-                    plan.toUpperCase() + 'プラン（¥' + parseInt(price).toLocaleString() + '/月）を選択しました';
-                document.getElementById('plan-modal').style.display = 'block';
-            });
-        });
+  <!-- プラン選択スクリプト -->
+  <script>
+    // プラン選択ボタン
+    document.querySelectorAll('.plan-select').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var plan = this.getAttribute('data-plan');
+        var price = this.getAttribute('data-price');
+        document.getElementById('selected-plan-info').textContent = 
+          plan.toUpperCase() + 'プラン（¥' + parseInt(price).toLocaleString() + '/月）を選択しました';
+        document.getElementById('plan-modal').style.display = 'block';
+      });
+    });
 
-        // モーダル閉じる
-        document.getElementById('close-plan-modal').addEventListener('click', function() {
-            document.getElementById('plan-modal').style.display = 'none';
-        });
+    // モーダル閉じる
+    document.getElementById('close-plan-modal').addEventListener('click', function() {
+      document.getElementById('plan-modal').style.display = 'none';
+    });
 
-        // プラン確定
-        document.getElementById('confirm-plan').addEventListener('click', function() {
-            alert('申し込みページに移動します（デモ）');
-            document.getElementById('plan-modal').style.display = 'none';
-        });
-
-        // 追加オプション選択
-        document.querySelectorAll('.addon-select').forEach(function(button) {
-            button.addEventListener('click', function() {
-                var addon = this.getAttribute('data-addon');
-                alert(addon + 'を追加しました（デモ）');
-            });
-        });
-
-        // 比較表表示
-        document.getElementById('show-comparison').addEventListener('click', function() {
-            alert('比較表を表示します（デモ）');
-        });
-
-        // 無料トライアル
-        document.getElementById('free-trial-btn').addEventListener('click', function() {
-            window.location.href = 'contact.html';
-        });
-    </script>
-</body>
-</html>
+    // プラン確定
+    document.getElementById('confirm-plan').addEventListener('click', function()
