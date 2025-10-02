@@ -2,27 +2,29 @@
 <html lang="ja">
 <head>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K7QKDXRR');</script>
-<!-- End Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K7QKDXRR');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>テストBtoBサイト - 会社情報</title>
 </head>
 <body>
- <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7QKDXRR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7QKDXRR"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
   <header>
     <h1>テストBtoBサイト</h1>
     <nav>
       <a href="index.html">トップ</a> |
       <a href="about.html">会社情報</a> |
       <a href="services.html">サービス</a> |
+      <a href="pricing.html">料金プラン</a> |
       <a href="contact.html">お問い合わせ</a>
     </nav>
   </header>
@@ -30,11 +32,104 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <main>
     <h2>会社情報</h2>
     <p>架空のBtoB会社です。GTMテスト用に作成されています。</p>
+    
+    <section id="company-overview">
+      <h3>会社概要</h3>
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>会社名</th>
+          <td>テストBtoB株式会社</td>
+        </tr>
+        <tr>
+          <th>設立</th>
+          <td>2020年4月1日</td>
+        </tr>
+        <tr>
+          <th>資本金</th>
+          <td>1億円</td>
+        </tr>
+        <tr>
+          <th>従業員数</th>
+          <td>150名</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>東京都千代田区千代田1-1</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="company-mission">
+      <h3>ミッション</h3>
+      <p>テクノロジーで企業の成長を支援し、より良いビジネス環境を創造します。</p>
+      <button id="mission-cta" class="about-action">ミッションの詳細を見る</button>
+    </section>
+
+    <section id="company-history">
+      <h3>沿革</h3>
+      <ul>
+        <li><strong>2020年4月:</strong> 会社設立</li>
+        <li><strong>2021年3月:</strong> 主力製品リリース</li>
+        <li><strong>2022年6月:</strong> 顧客数1,000社突破</li>
+        <li><strong>2023年9月:</strong> 海外展開開始</li>
+        <li><strong>2024年12月:</strong> 従業員数150名達成</li>
+      </ul>
+    </section>
+
+    <section id="team-section">
+      <h3>経営チーム</h3>
+      <div class="team-members">
+        <div class="team-member" data-member="ceo">
+          <h4>代表取締役社長</h4>
+          <p>山田 太郎</p>
+          <button class="member-detail" data-member="ceo">プロフィールを見る</button>
+        </div>
+        <div class="team-member" data-member="cto">
+          <h4>取締役CTO</h4>
+          <p>鈴木 花子</p>
+          <button class="member-detail" data-member="cto">プロフィールを見る</button>
+        </div>
+        <div class="team-member" data-member="cfo">
+          <h4>取締役CFO</h4>
+          <p>佐藤 一郎</p>
+          <button class="member-detail" data-member="cfo">プロフィールを見る</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="download-company-info">
+      <h3>会社案内資料</h3>
+      <p>詳しい会社情報はこちらからダウンロードいただけます</p>
+      <button id="download-company-profile" class="download-btn" data-file="company-profile">会社案内をダウンロード</button>
+    </section>
+
     <button id="aboutBtn">会社情報ボタン</button>
   </main>
 
   <footer>
     <p>&copy; 2025 テストBtoBサイト</p>
   </footer>
+
+  <script>
+    // 各種ボタンのイベント処理
+    document.getElementById('aboutBtn').addEventListener('click', function() {
+      alert('会社情報ボタンがクリックされました');
+    });
+
+    document.getElementById('mission-cta').addEventListener('click', function() {
+      alert('ミッション詳細ページに移動します（デモ）');
+    });
+
+    document.querySelectorAll('.member-detail').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var member = this.getAttribute('data-member');
+        alert(member.toUpperCase() + 'のプロフィールを表示します（デモ）');
+      });
+    });
+
+    document.getElementById('download-company-profile').addEventListener('click', function() {
+      alert('会社案内をダウンロードします（デモ）');
+    });
+  </script>
 </body>
 </html>
