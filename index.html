@@ -1,123 +1,135 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTM練習サイト - トップページ</title>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K7QKDXRR');</script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テストBtoBサイト - トップページ</title>
 </head>
 <body>
-    <!-- ヘッダー -->
-    <header>
-        <nav>
-            <h1>GTM練習サイト</h1>
-            <ul>
-                <li><a href="index.html">ホーム</a></li>
-                <li><a href="pricing.html">料金プラン</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7QKDXRR"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
+  <header>
+    <h1>テストBtoBサイト</h1>
+    <nav>
+      <a href="index.html">トップ</a> |
+      <a href="about.html">会社情報</a> |
+      <a href="services.html">サービス</a> |
+      <a href="pricing.html">料金プラン</a> |
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </header>
 
+  <main>
     <!-- ヒーローセクション -->
     <section id="hero">
-        <h2>ビジネスを加速させるソリューション</h2>
-        <p>私たちのサービスで、あなたのビジネスを次のレベルへ</p>
-        <button id="cta-button" class="cta-primary">今すぐ始める</button>
-        <button id="cta-secondary" class="cta-secondary">詳細を見る</button>
+      <h2>ビジネスを加速させるソリューション</h2>
+      <p>私たちのサービスで、あなたのビジネスを次のレベルへ</p>
+      <button id="cta-button" class="cta-primary">今すぐ始める</button>
+      <button id="cta-secondary" class="cta-secondary">詳細を見る</button>
     </section>
 
     <!-- 製品の特徴セクション -->
     <section id="features">
-        <h2>製品の特徴</h2>
-        <div class="feature-list">
-            <div class="feature-item" data-feature="speed">
-                <h3>高速処理</h3>
-                <p>最新技術による高速処理を実現</p>
-            </div>
-            <div class="feature-item" data-feature="security">
-                <h3>セキュリティ</h3>
-                <p>エンタープライズレベルのセキュリティ</p>
-            </div>
-            <div class="feature-item" data-feature="support">
-                <h3>24時間サポート</h3>
-                <p>いつでも安心のサポート体制</p>
-            </div>
+      <h2>製品の特徴</h2>
+      <div class="feature-list">
+        <div class="feature-item" data-feature="speed">
+          <h3>高速処理</h3>
+          <p>最新技術による高速処理を実現</p>
         </div>
+        <div class="feature-item" data-feature="security">
+          <h3>セキュリティ</h3>
+          <p>エンタープライズレベルのセキュリティ</p>
+        </div>
+        <div class="feature-item" data-feature="support">
+          <h3>24時間サポート</h3>
+          <p>いつでも安心のサポート体制</p>
+        </div>
+      </div>
     </section>
 
     <!-- 動画埋め込みセクション -->
     <section id="video-section">
-        <h2>製品紹介動画</h2>
-        <div class="video-container">
-            <iframe id="product-video" 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                    title="製品紹介動画" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-            </iframe>
-        </div>
-        <button id="video-cta">動画を見て詳細を確認</button>
+      <h2>製品紹介動画</h2>
+      <div class="video-container">
+        <iframe id="product-video" 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="製品紹介動画" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+      </div>
+      <button id="video-cta">動画を見て詳細を確認</button>
     </section>
 
     <!-- 資料ダウンロードセクション -->
     <section id="download-section">
-        <h2>資料ダウンロード</h2>
-        <p>製品の詳細資料を無料でダウンロードいただけます</p>
-        <button id="download-whitepaper" class="download-btn" data-file="whitepaper">ホワイトペーパーをダウンロード</button>
-        <button id="download-catalog" class="download-btn" data-file="catalog">製品カタログをダウンロード</button>
-        <button id="download-casestudy" class="download-btn" data-file="casestudy">導入事例をダウンロード</button>
+      <h2>資料ダウンロード</h2>
+      <p>製品の詳細資料を無料でダウンロードいただけます</p>
+      <button id="download-whitepaper" class="download-btn" data-file="whitepaper">ホワイトペーパーをダウンロード</button>
+      <button id="download-catalog" class="download-btn" data-file="catalog">製品カタログをダウンロード</button>
+      <button id="download-casestudy" class="download-btn" data-file="casestudy">導入事例をダウンロード</button>
     </section>
 
     <!-- SNS外部リンク -->
     <section id="social-section">
-        <h2>フォローしてください</h2>
-        <div class="social-links">
-            <a href="https://twitter.com/example" class="social-link" data-social="twitter" target="_blank" rel="noopener">Twitter</a>
-            <a href="https://facebook.com/example" class="social-link" data-social="facebook" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://linkedin.com/company/example" class="social-link" data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://instagram.com/example" class="social-link" data-social="instagram" target="_blank" rel="noopener">Instagram</a>
-        </div>
+      <h2>フォローしてください</h2>
+      <div class="social-links">
+        <a href="https://twitter.com/example" class="social-link" data-social="twitter" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://facebook.com/example" class="social-link" data-social="facebook" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://linkedin.com/company/example" class="social-link" data-social="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/example" class="social-link" data-social="instagram" target="_blank" rel="noopener">Instagram</a>
+      </div>
     </section>
 
     <!-- モーダル起動ボタン -->
     <section id="modal-section">
-        <button id="open-modal">特別オファーを見る</button>
+      <button id="open-modal">特別オファーを見る</button>
     </section>
+  </main>
 
-    <!-- モーダルウィンドウ -->
-    <div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
-        <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:30px; border-radius:8px; max-width:500px;">
-            <h2>期間限定特別オファー</h2>
-            <p>今なら初月50%オフ！</p>
-            <button id="modal-cta" class="modal-action">今すぐ申し込む</button>
-            <button id="close-modal">閉じる</button>
-        </div>
+  <!-- モーダルウィンドウ -->
+  <div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:1000;">
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:30px; border-radius:8px; max-width:500px;">
+      <h2>期間限定特別オファー</h2>
+      <p>今なら初月50%オフ！</p>
+      <button id="modal-cta" class="modal-action">今すぐ申し込む</button>
+      <button id="close-modal">閉じる</button>
     </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 GTM練習サイト. All rights reserved.</p>
-        <a href="contact.html">お問い合わせ</a> | <a href="pricing.html">料金プラン</a>
-    </footer>
+  <footer>
+    <p>&copy; 2025 テストBtoBサイト</p>
+  </footer>
 
-    <!-- モーダル制御スクリプト -->
-    <script>
-        document.getElementById('open-modal').addEventListener('click', function() {
-            document.getElementById('modal').style.display = 'block';
-        });
+  <!-- モーダル制御スクリプト -->
+  <script>
+    document.getElementById('open-modal').addEventListener('click', function() {
+      document.getElementById('modal').style.display = 'block';
+    });
 
-        document.getElementById('close-modal').addEventListener('click', function() {
-            document.getElementById('modal').style.display = 'none';
-        });
+    document.getElementById('close-modal').addEventListener('click', function() {
+      document.getElementById('modal').style.display = 'none';
+    });
 
-        // モーダル外クリックで閉じる
-        document.getElementById('modal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                this.style.display = 'none';
-            }
-        });
-    </script>
+    // モーダル外クリックで閉じる
+    document.getElementById('modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        this.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
