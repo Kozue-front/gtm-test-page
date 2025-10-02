@@ -2,27 +2,29 @@
 <html lang="ja">
 <head>
   <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K7QKDXRR');</script>
-<!-- End Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K7QKDXRR');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>テストBtoBサイト - サービス</title>
-  </head>
+</head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7QKDXRR"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7QKDXRR"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
   <header>
     <h1>テストBtoBサイト</h1>
     <nav>
       <a href="index.html">トップ</a> |
       <a href="about.html">会社情報</a> |
       <a href="services.html">サービス</a> |
+      <a href="pricing.html">料金プラン</a> |
       <a href="contact.html">お問い合わせ</a>
     </nav>
   </header>
@@ -30,11 +32,138 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <main>
     <h2>サービス紹介</h2>
     <p>ここでは架空のサービス内容を紹介します。</p>
+
+    <section id="service-list">
+      <h3>提供サービス</h3>
+      
+      <div class="service-item" data-service="cloud-solution">
+        <h4>クラウドソリューション</h4>
+        <p>企業のDX推進を支援するクラウドベースのソリューションを提供します。</p>
+        <ul>
+          <li>データ管理の効率化</li>
+          <li>セキュアなクラウド環境</li>
+          <li>スケーラブルなインフラ</li>
+        </ul>
+        <button class="service-detail" data-service="cloud-solution">詳細を見る</button>
+        <button class="service-inquiry" data-service="cloud-solution">お問い合わせ</button>
+      </div>
+
+      <div class="service-item" data-service="analytics">
+        <h4>ビジネスアナリティクス</h4>
+        <p>データドリブンな意思決定を支援する高度な分析ツールを提供します。</p>
+        <ul>
+          <li>リアルタイムダッシュボード</li>
+          <li>予測分析機能</li>
+          <li>カスタムレポート作成</li>
+        </ul>
+        <button class="service-detail" data-service="analytics">詳細を見る</button>
+        <button class="service-inquiry" data-service="analytics">お問い合わせ</button>
+      </div>
+
+      <div class="service-item" data-service="consulting">
+        <h4>コンサルティングサービス</h4>
+        <p>経験豊富な専門家がビジネス課題の解決をサポートします。</p>
+        <ul>
+          <li>業務プロセス改善</li>
+          <li>IT戦略立案</li>
+          <li>デジタル変革支援</li>
+        </ul>
+        <button class="service-detail" data-service="consulting">詳細を見る</button>
+        <button class="service-inquiry" data-service="consulting">お問い合わせ</button>
+      </div>
+    </section>
+
+    <section id="service-features">
+      <h3>サービスの特長</h3>
+      <div class="features-grid">
+        <div class="feature" data-feature="customizable">
+          <h4>カスタマイズ可能</h4>
+          <p>お客様のニーズに合わせた柔軟なカスタマイズが可能です</p>
+        </div>
+        <div class="feature" data-feature="support">
+          <h4>充実のサポート</h4>
+          <p>24時間365日、専門スタッフがサポートいたします</p>
+        </div>
+        <div class="feature" data-feature="integration">
+          <h4>既存システム連携</h4>
+          <p>既存のシステムとのスムーズな連携が可能です</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="service-cases">
+      <h3>導入事例</h3>
+      <p>多くの企業様にご利用いただいております</p>
+      <button id="view-case-studies" class="case-study-btn">導入事例を見る</button>
+      <button id="download-case-study" class="download-btn" data-file="case-study">導入事例資料をダウンロード</button>
+    </section>
+
+    <section id="service-demo">
+      <h3>無料デモ・トライアル</h3>
+      <p>実際にサービスをお試しいただけます</p>
+      <button id="request-demo" class="demo-btn">デモを申し込む</button>
+      <button id="start-trial" class="trial-btn">無料トライアルを始める</button>
+    </section>
+
+    <section id="service-video">
+      <h3>サービス紹介動画</h3>
+      <iframe id="service-intro-video" 
+              width="560" 
+              height="315" 
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="サービス紹介動画" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+    </section>
+
     <button id="servicesBtn">サービス詳細ボタン</button>
   </main>
 
   <footer>
     <p>&copy; 2025 テストBtoBサイト</p>
   </footer>
+
+  <script>
+    // サービス詳細ボタン
+    document.querySelectorAll('.service-detail').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var service = this.getAttribute('data-service');
+        alert(service + 'の詳細ページに移動します（デモ）');
+      });
+    });
+
+    // サービスお問い合わせボタン
+    document.querySelectorAll('.service-inquiry').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var service = this.getAttribute('data-service');
+        window.location.href = 'contact.html?service=' + service;
+      });
+    });
+
+    // 導入事例ボタン
+    document.getElementById('view-case-studies').addEventListener('click', function() {
+      alert('導入事例ページに移動します（デモ）');
+    });
+
+    document.getElementById('download-case-study').addEventListener('click', function() {
+      alert('導入事例資料をダウンロードします（デモ）');
+    });
+
+    // デモ・トライアルボタン
+    document.getElementById('request-demo').addEventListener('click', function() {
+      alert('デモ申し込みフォームに移動します（デモ）');
+    });
+
+    document.getElementById('start-trial').addEventListener('click', function() {
+      alert('無料トライアル登録ページに移動します（デモ）');
+    });
+
+    // 既存のボタン
+    document.getElementById('servicesBtn').addEventListener('click', function() {
+      alert('サービス詳細ボタンがクリックされました');
+    });
+  </script>
 </body>
 </html>
